@@ -20,12 +20,21 @@
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
     background: var(--bg-secondary);
     padding: 1rem 2rem;
+
     display: flex;
     justify-content: center;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
 }
+
 
 .navbar nav {
     display: flex;
@@ -51,19 +60,8 @@ body {
     font-family: var(--font-main);
     margin: 0;
     padding: 2rem;
-    padding-top: 70px;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: var(--bg-secondary);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    z-index: 1000;
+    padding-top: 90px;
+    padding-bottom: 70px;
 }
 
 .hero {
@@ -113,4 +111,73 @@ body {
 
 .hero-links a:hover {
     opacity: 0.7;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 1rem 0;
+    text-align: center;
+
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+}
+
+
+.footer a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.cv-section {
+    background: var(--bg-secondary);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    margin-bottom: 2rem;
+}
+
+.cv-section h2 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.cv-section p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.skill-category h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text);
+}
+
+.skill-category p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
