@@ -5,6 +5,10 @@ This repository demonstrates GitHub Actions-based Continuous Integration and Con
 - Goal: Deploy updates to GitHub Pages when `main` receives a push affecting any *.html file.
 - Static site entry: `index.html` includes a text placeholder: "Hello, GitHub Actions!".
 
+## Project URL
+Created according to the requirements from
+https://roadmap.sh/projects/github-actions-deployment-workflow
+
 ## Files Included
 
 - `index.html` — main page for the website
@@ -31,3 +35,4 @@ After setup and a successful workflow run, the site is available at:
 2. Push to GitHub.
 3. Workflow runs automatically and deploys to `gh-pages`.
 4. Visit the GitHub Pages URL to verify.
+
